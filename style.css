@@ -4,3 +4,274 @@
 /* import normalize css */
 @import url(./assets/styles/normalize.css);
 
+:root{
+    --primary-color:#FFFFFF;
+}
+body{
+    background: #00031A;
+    overflow-x: hidden;
+    margin-bottom: 5000px;
+}
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.button{
+    padding: 10px 23px;
+
+    background: transparent;
+    border: 2px solid #4AED52;
+    border-radius: 6px;
+
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--primary-color);
+
+    transition: all .15s ease-in;
+}
+.intro{
+    background-image: url(./assets/img/fisrtBg.png);
+    background-repeat: no-repeat;
+}
+.header__content{
+    padding-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list{
+    display: flex;
+
+    list-style-type: none;
+}
+.nav__item-link{
+    margin: 0px 30px;
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    
+    color: var(--primary-color);
+    
+    opacity: 0.7;
+    text-decoration: none;
+
+    transition: all 0.25s ease-out;
+}
+.nav__item-link:hover{
+    opacity: 1;
+}
+.header__btn:hover{
+    background: #45b04a;
+    border: 2px solid#FFFFFF;
+}
+
+
+.launch__content{
+    max-height: 620px;
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.launch__suptitle{
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.launch__title{
+    font-family: 'Paytone One';
+    font-size: 68px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.launch__title b {
+    background: linear-gradient(124.65deg, #E025CE 22.81%, #4AED52 98.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.launch__subtitle{
+    margin-top: 30px;
+
+    max-width: 497px;
+
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.launch__info-box,.launch__info-btn{
+    display: flex;
+    align-items: center;
+}
+.launch__info-box{
+    margin-top: 45px;
+}
+.launch__info-btn{
+    margin-left: 25px;
+
+    font-family: 'Outfit';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.launch__btn{
+    background: #E025CE;
+}
+.launch__popular{
+    position: relative;
+}
+.launch__effect{
+    width: 514px;
+    height: 514px;
+    background: linear-gradient(124.65deg, #E025CE 22.81%, #4AED52 98.66%);
+    opacity: 0.5;
+    filter: blur(50px);
+    transform: rotate(150deg);
+}
+.launch__card{
+    position: relative;
+    bottom: 500px;
+
+    width: 514px;
+    height: 481px;
+
+
+    
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.132) -6.39%, rgba(143, 143, 143, 0.063) 112.17%);
+    backdrop-filter: blur(50px);
+
+    border: 5px solid  rgba(224, 37, 206, 0.7);
+    border-radius: 6px;
+}
+.launch__card-time{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 1;
+    width: 150px;
+    padding: 7px 10px;
+    
+    display: flex;
+    justify-content: center;
+    
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.201) -6.39%, rgba(255, 255, 255, 0.063) 112.17%);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 6px;
+}
+.launch__card-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.launch__card-info{
+    position: absolute;
+    bottom: 0;
+
+    width: 514px;
+    height: 138px;
+
+    padding: 15px 20px;
+    
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.201) -6.39%, rgba(255, 255, 255, 0.063) 112.17%);
+    backdrop-filter: blur(5px);
+
+    
+    border-radius: 0px 0px 6px 6px;
+}
+.launch__card-title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    
+    color: #000000;
+}
+.launch__card-subtitle,.launch__eth-title,.launch__time-title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #ffffff;
+}
+.launch__eth-title{
+    font-size: 22px;
+    margin-left: 10px;
+}
+.launch__card-eth{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.market{
+    margin-top: 150px;
+    width: 100%;
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.132) -6.39%, rgba(143, 143, 143, 0.063) 112.17%);
+    backdrop-filter: blur(50px);
+}
+.market__content{
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.market__box{
+    display: flex;
+    align-items: center;
+}
+.market__box-title{
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+}
+
+.navigation{
+    background: white;
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: none;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: all 1s ease-in;
+}
+.navigation a img{
+    width: 30px;
+    height: 30px;
+}
+.navigation a{
+    background: transparent;
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+    transition: all 1s ease;
+}
+.navigation a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
