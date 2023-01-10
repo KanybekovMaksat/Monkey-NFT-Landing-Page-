@@ -10,7 +10,6 @@
 body{
     background: #00031A;
     overflow-x: hidden;
-    margin-bottom: 5000px;
 }
 .container{
     max-width: 1340px;
@@ -30,6 +29,50 @@ body{
     color: var(--primary-color);
 
     transition: all .15s ease-in;
+}
+.secondary-button{
+    padding: 11px 18px;
+
+    background: #00031A;
+    border-radius: 6px;
+
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+.secondary-button:hover{
+    background: #FFFFFF;
+    color: #000000;
+}
+.success-send{
+    transform: translateY(-999px);
+    position: fixed;
+    top: 2%;
+    left: 35%;
+    width: 450px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    transition: all 500ms ease;
+}
+.success__send-text{
+    font-family: 'Arial';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    margin-right: 15px;
+}
+.success__send-close{
+    position: absolute;
+    top:15%;
+    right: 2%;
 }
 .intro{
     background-image: url(./assets/img/fisrtBg.png);
@@ -274,4 +317,495 @@ body{
 }
 .navigation a:hover {
     background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Trend section*/
+
+.trend{
+    padding-top: 182px;
+
+    height: 900px;
+
+    background-image: url(./assets/img/secondBg.jpg);
+}
+.trend__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trend__title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    
+    color: #FFFFFF;
+}
+.trend__wrapper{
+    margin: 127px 0px 54px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.trend__card{
+    margin: 0px 12px;
+    position: relative;
+    width: 312px;
+    height: 442px;
+
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.132) -6.39%, rgba(255, 255, 255, 0.063) 112.17%);
+    backdrop-filter: blur(37.2263px);
+    border-radius: 6px;
+}
+.trend__card-img{
+    position: absolute;
+    bottom: 150px;
+    left: 10px;
+}
+.trend__card-info{
+    position: absolute;
+    bottom: 0;
+
+    width: 313px;
+    height: 150px;
+
+    padding: 20px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.201) -6.39%, rgba(255, 255, 255, 0.063) 112.17%);
+    backdrop-filter: blur(3.72263px);
+    border-radius: 0px 0px 6px 6px;
+}
+.trend__info-title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;    
+}
+.trend__info-subtitle{
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.trend__info-price{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.trend__info-price p {
+    margin-left: 13px;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.trend__info-time{
+    margin-bottom: 24px;
+
+    padding:9px 10px ;
+
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(3.72263px);
+    border-radius: 6px;
+}
+.trend__info-time p{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 14.8905px;
+    color: #FFFFFF;
+}
+.trend__btn{
+    background: #E025CE;
+}
+.treasures{
+    height: 1100px;
+    background-image: url(./assets/img/thirdBg.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+ 
+}
+.treasure__content{
+    padding-top: 161px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.treasure__title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 38px;  
+    color: #FFFFFF; 
+}
+.treasure__subtitle{
+    max-width: 723px;
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;   
+    opacity: 0.7;
+}
+.treasure__wrapper{
+    margin: 73px 0px 81px;
+    display: grid;
+    grid-template-columns: repeat(252px, 5);
+    grid-template-rows: repeat(415px, 2);
+    column-gap: 17px;
+    row-gap: 30px;
+}
+.treasure__card{
+    padding: 15px;
+    width: 252px;
+    height: 415px;
+
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.132) -6.39%, rgba(255, 255, 255, 0.063) 112.17%);
+    backdrop-filter: blur(25.381px);
+    border-radius: 6px;
+}
+.treasure__card:first-child{
+    grid-column: 1/2 ;
+    grid-row: 1/2;
+}
+.treasure__card:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.treasure__card:nth-child(3){
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.treasure__card:nth-child(4){
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.treasure__card:nth-child(5){
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+
+.treasure__card-top{
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+.treasure__card-avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(161, 159, 159);
+    background-image: url(./assets/img/user.png);
+}
+.treasure__card-count{
+    margin-left: 5px;
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.treasure__card-like{
+    margin-left: 85px;
+    width: 16px;
+    height: 16px;
+
+    background-image: url(./assets/img/heart.svg);
+}
+.treasure__card-liked{
+    margin-left: 85px;
+    width: 16px;
+    height: 16px;
+
+    background-image: url(./assets/img/liked.svg);
+}
+.treasure__card-title{
+    font-family: 'Outfit'; 
+    font-weight: 700;
+    font-size: 18px; 
+    color: #FFFFFF;
+}
+.treasure__card-subtitle,.treasure__price-box{
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.treasure__price-box p{
+    color: #FFFFFF;
+}
+.treasure__card-price,.treasure__price  {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.become{
+    margin-top: 248px;
+    background-image: url(./assets/img/thirdBg.jpg);
+    height: 878px;
+}
+.become__content,.become__card{
+    padding-top: 124px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.become__title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 38px;
+    color: #FFFFFF;
+}
+.become__wrapper{
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-between;
+}
+.become__card{
+    width: 422px;
+    height: 420px;
+    /* padding: 99px 50px; */
+    margin: 0px 12px;
+    border: 1px solid #4AED52;
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
+    backdrop-filter: blur(12.5px);
+    border-radius: 10px;
+}
+.become__card:first-child{
+    margin-top: 75px;
+}
+.become__card:nth-child(2){
+    margin-top: 0px;
+}
+.become__card:last-child{
+    margin-top: 75px;
+}
+.become__card-title{
+    margin: 25px 0px;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.become__card-text{
+    max-width: 312px;
+    
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.popular__card{
+    position: relative;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 319px;
+    height: 433px;
+
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.176) -6.39%, rgba(143, 143, 143, 0.084) 112.17%);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+}
+.popular__card-avatar{
+    position: absolute;
+    top: 26%;
+}
+.popular__card-title{
+    margin-top: 51px;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;    
+}
+.popular__card-subtitle{
+    max-width: 205px; 
+
+    margin: 7px 0px 15px 0px;
+
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 18px; 
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.popular__card-btn{
+    padding: 8px 25px;
+
+    border:1px solid #BD24E6;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+
+    transition: all 1s ease;
+
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 18px; 
+    text-align: center;
+    color: black;
+}
+.popular__card-btn:hover{
+    background: #FFFFFF;
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+}
+.popular__card-info{
+    margin-top: 41px;
+    display: flex;
+}
+.popular__info-box{
+    margin: 0px 12px;
+}
+.news{
+    position: relative;
+    height: 906px;
+    background-image: url(./assets/img/fiveteenBG.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+.news__content{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 1334px;
+    height: 445px;
+
+    padding: 125px 350px;
+
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
+    backdrop-filter: blur(30.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 30px;
+}
+.news__effect{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+
+    width: 514px;
+    height: 514px;
+    border-radius: 50%;
+
+    background: linear-gradient(124.65deg, #E025CE 22.81%, #4AED52 98.66%);
+    opacity: 0.5;
+    filter: blur(50px);
+}
+.news__title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.news__subtitle{
+    max-width: 530px;
+
+    margin: 15px 0px 36px 0px;
+
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+#input{
+    width: 361px;
+    height: 62px; 
+
+    padding: 18px 19px;
+
+    outline: none;
+    border: none;
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
+    backdrop-filter: blur(12.5px);
+    border-radius: 6px;
+
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 20px;    
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.news__btn{
+    background: linear-gradient(142.41deg, #BD24E6 -12.51%, #E40FAC 136.14%);
+    border: 2px solid #4AED52;
+    border-radius: 6px;
+    margin-left: 15px;
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__wrapper-desc{
+    margin: 22px 0px 40px 0px;
+    max-width: 423px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+    opacity: 0.7;
+}
+.footer__wrapper-link{
+    text-decoration: none;
+    margin: 0px 4px 0px 4px;
+}
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer__nav-link{
+    margin: 7px 0px 7px 0px;
+    text-decoration: none;
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #9B9292;
+}
+.footer__nav-link strong {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.footer__bottom{
+    margin: 60px 0px 30px 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.footer__bottom p{
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.footer__bottom-terms{
+    margin-left: 500px;
 }
