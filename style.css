@@ -11,6 +11,9 @@ body{
     background: #00031A;
     overflow-x: hidden;
 }
+body h3, p {
+    color: #FFFFFF;
+}
 .container{
     max-width: 1340px;
     margin: 0 auto;
@@ -77,6 +80,10 @@ body{
 .intro{
     background-image: url(./assets/img/fisrtBg.png);
     background-repeat: no-repeat;
+}
+.background{
+    background-image: url(./assets/img/background.jpg);
+    height: auto;
 }
 .header__content{
     padding-top: 50px;
@@ -212,7 +219,6 @@ body{
     
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.201) -6.39%, rgba(255, 255, 255, 0.063) 112.17%);
     backdrop-filter: blur(5px);
-    /* Note: backdrop-filter has minimal browser support */
     
     border-radius: 6px;
 }
@@ -291,7 +297,7 @@ body{
     background: white;
     width: max-content;
     padding: 0.7rem 1.7rem;
-    z-index: 2;
+    z-index: 99999;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -324,10 +330,6 @@ body{
 
 .trend{
     padding-top: 182px;
-
-    height: 900px;
-
-    background-image: url(./assets/img/secondBg.jpg);
 }
 .trend__content{
     display: flex;
@@ -427,9 +429,6 @@ body{
 }
 .treasures{
     height: 1100px;
-    background-image: url(./assets/img/thirdBg.jpg);
-    background-repeat: no-repeat;
-    background-position: contain;
  
 }
 .treasure__content{
@@ -549,8 +548,6 @@ body{
 
 .become{
     margin-top: 248px;
-    background-image: url(./assets/img/thirdBg.jpg);
-    height: 878px;
 }
 .become__content,.become__card{
     padding-top: 124px;
@@ -573,7 +570,6 @@ body{
 .become__card{
     width: 422px;
     height: 420px;
-    /* padding: 99px 50px; */
     margin: 0px 12px;
     border: 1px solid #4AED52;
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
@@ -607,10 +603,27 @@ body{
     color: #FFFFFF;
     opacity: 0.7;
 }
+.popular__content{
+    margin: 300px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popular__title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 80px;
+}
+.popular__wrapper{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
 .popular__card{
     position: relative;
 
-    padding: 10px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -621,6 +634,34 @@ body{
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.176) -6.39%, rgba(143, 143, 143, 0.084) 112.17%);
     backdrop-filter: blur(50px);
     border-radius: 10px;
+}
+.popular__card:first-child{
+    position: absolute;
+    left: 10%;
+    
+    margin-top: 100px;
+}
+.popular__card:nth-child(2){
+    position: absolute;
+    left:20% ;
+    z-index: 2;
+    margin-top: 50px;
+}
+.popular__card:nth-child(3){
+    position: absolute;
+    left: 40%;
+    z-index: 999;
+}
+.popular__card:nth-child(4){
+    position: absolute;
+    right: 20%;
+    z-index: 2;
+    margin-top: 50px;
+}
+.popular__card:last-child{
+    position: absolute;
+    right: 10%;
+    margin-top: 100px;
 }
 .popular__card-avatar{
     position: absolute;
@@ -673,12 +714,113 @@ body{
 .popular__info-box{
     margin: 0px 12px;
 }
+.popular__info-title{
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0.7;
+}
+.popular__info-subtitle{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+.collection__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collection__title{
+    margin-top: 358px;
+
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 38px;
+}
+.collection__wrapper{
+    margin: 80px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 428px);
+    grid-template-rows: repeat(2, 426px);
+    column-gap: 25px;
+    row-gap: 45px;
+}
+.collection__card{
+    width: 428.46px;
+    height: 426.84px;
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
+    backdrop-filter: blur(12.5px);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.collection__card-inner{
+    position: relative;
+
+    padding: 22px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 121.71px);
+    grid-template-rows: 135.26px;
+    gap: 8px;
+}
+.collection__card-img:nth-child(3){
+    grid-column:1/2 ;
+    grid-row: 2/3;
+}
+.collection__card-img:nth-child(4){
+    grid-column:2/3 ;
+    grid-row: 2/3;
+}
+.collection__card-img:last-child{
+    grid-column:3/4;
+    grid-row: 2/3;
+}
+.collection__card-info{
+    position: absolute;
+    bottom: 0;
+
+    padding: 18px 23px;
+
+    width: 428px;
+    height: 105px;
+    
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    opacity: 0.7;
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 6px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.collection__info-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 97px;
+}
+.collection__card-title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 20px;
+}
+.collection__card-subtitle{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    color: #A3A3A3;
+}
+.collection__card-like{
+    width: 17px;
+    height: 17px;
+
+    background-image: url(./assets/img/heart.svg);
+}
+.collection__btn{
+    background: #E025CE;
+}
 .news{
     position: relative;
-    height: 906px;
-    background-image: url(./assets/img/fiveteenBG.jpg);
-    background-repeat: no-repeat;
-    background-position: cover;
 }
 .news__content{
     margin-top: 160px;
@@ -693,7 +835,6 @@ body{
 
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
     backdrop-filter: blur(30.5px);
-    /* Note: backdrop-filter has minimal browser support */
     
     border-radius: 30px;
 }
@@ -756,6 +897,54 @@ body{
     margin-left: 15px;
 }
 
+.partners__title{
+    margin-top: 160px;
+
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.partners__wrapper{
+    margin-top: 80px;
+    display: flex;
+}
+.partners__wrapper:last-child{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 25px;
+}
+.partners__card{
+    margin: 0 19px;
+    width: 254px;
+    height: 128px;
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
+    backdrop-filter: blur(12.5px);
+    border-radius: 6px;
+    border: 1px solid #E025CE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.partners__card-title{
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0.7;
+}
+.footer{
+    margin-top: 160px;
+
+    height: 510px;
+
+    background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
+    backdrop-filter: blur(12.5px);
+}
+.footer__content{
+    padding-top: 160px;
+}
 .footer__wrapper{
     display: flex;
     justify-content: space-between;

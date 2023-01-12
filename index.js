@@ -86,6 +86,7 @@ closeAlert.addEventListener('click', () => {
   alert.style.transform = 'translateY(-999px)';
 })
 
+
 const form = document.getElementById("myForm");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
