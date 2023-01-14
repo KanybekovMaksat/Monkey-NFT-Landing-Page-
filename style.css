@@ -4,6 +4,7 @@
 /* import normalize css */
 @import url(./assets/styles/normalize.css);
 
+
 :root{
     --primary-color:#FFFFFF;
 }
@@ -11,9 +12,12 @@ body{
     background: #00031A;
     overflow-x: hidden;
 }
+
 body h3, p {
+
     color: #FFFFFF;
 }
+
 .container{
     max-width: 1340px;
     margin: 0 auto;
@@ -52,25 +56,30 @@ body h3, p {
     color: #000000;
 }
 .success-send{
-    transform: translateY(-999px);
     position: fixed;
     top: 2%;
     left: 35%;
+
     width: 450px;
     height: 50px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    
     background-color: #FFFFFF;
+    transform: translateY(-999px);
+
     transition: all 500ms ease;
 }
 .success__send-text{
-    font-family: 'Arial';
+    margin-right: 15px;
+
+    font-family: 'Outfit';
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
-    color: #000000;
-    margin-right: 15px;
+    color:rgb(0,0,0,0.5);
 }
 .success__send-close{
     position: absolute;
@@ -99,15 +108,14 @@ body h3, p {
 }
 .nav__item-link{
     margin: 0px 30px;
+
     font-family: 'Outfit';
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
+
     text-align: center;
-    letter-spacing: 0.01em;
-    
     color: var(--primary-color);
-    
     opacity: 0.7;
     text-decoration: none;
 
@@ -120,16 +128,14 @@ body h3, p {
     background: #45b04a;
     border: 2px solid#FFFFFF;
 }
-
-
 .launch__content{
-    max-height: 620px;
     margin-top: 100px;
+
+    max-height: 620px;
 
     display: flex;
     justify-content: space-between;
 }
-
 .launch__suptitle{
     font-family: 'Outfit';
     font-weight: 600;
@@ -172,7 +178,6 @@ body h3, p {
     font-family: 'Outfit';
     font-weight: 800;
     font-size: 20px;
-    line-height: 25px;
     text-transform: uppercase;
     
     color: #FFFFFF;
@@ -186,6 +191,7 @@ body h3, p {
 .launch__effect{
     width: 514px;
     height: 514px;
+
     background: linear-gradient(124.65deg, #E025CE 22.81%, #4AED52 98.66%);
     opacity: 0.5;
     filter: blur(50px);
@@ -197,8 +203,6 @@ body h3, p {
 
     width: 514px;
     height: 481px;
-
-
     
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.132) -6.39%, rgba(143, 143, 143, 0.063) 112.17%);
     backdrop-filter: blur(50px);
@@ -211,6 +215,7 @@ body h3, p {
     top: 2%;
     right: 2%;
     z-index: 1;
+
     width: 150px;
     padding: 7px 10px;
     
@@ -231,7 +236,7 @@ body h3, p {
     position: absolute;
     bottom: 0;
 
-    width: 514px;
+    width: 504px;
     height: 138px;
 
     padding: 15px 20px;
@@ -239,14 +244,12 @@ body h3, p {
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.201) -6.39%, rgba(255, 255, 255, 0.063) 112.17%);
     backdrop-filter: blur(5px);
 
-    
     border-radius: 0px 0px 6px 6px;
 }
 .launch__card-title{
     font-family: 'Outfit';
     font-weight: 700;
     font-size: 20px;
-    line-height: 25px;
     
     color: #000000;
 }
@@ -254,31 +257,33 @@ body h3, p {
     font-family: 'Outfit';
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
     
     color: #ffffff;
 }
 .launch__eth-title{
-    font-size: 22px;
     margin-left: 10px;
+
+    font-size: 22px;
 }
 .launch__card-eth{
     margin-top: 25px;
+
     display: flex;
     align-items: center;
 }
 .market{
     margin-top: 150px;
+
     width: 100%;
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.132) -6.39%, rgba(143, 143, 143, 0.063) 112.17%);
     backdrop-filter: blur(50px);
 }
 .market__content{
     height: 125px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .market__box{
     display: flex;
@@ -292,39 +297,44 @@ body h3, p {
     
     opacity: 0.7;
 }
-
 .navigation{
-    background: white;
+    display: none;
+    
     width: max-content;
+
     padding: 0.7rem 1.7rem;
-    z-index: 99999;
+
     position: fixed;
     left: 50%;
-    transform: translateX(-50%);
+    z-index: 99999;
     bottom: 2rem;
-    display: none;
-    gap: 0.8rem;
+
+    background: white;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
-    transition: all 1s ease-in;
+    gap: 0.8rem;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in;
 }
 .navigation a img{
     width: 30px;
     height: 30px;
 }
 .navigation a{
-    background: transparent;
-    padding: 4px;
-    border-radius: 50%;
     display: flex;
+
+    padding: 4px;
+
+    background: transparent;
+    border-radius: 50%;
     color: var(--color-light);
+
     font-size: 1.1rem;
-    transition: all 1s ease;
+    transition: all 200ms ease;
 }
 .navigation a:hover {
     background: rgba(0, 0, 0, 0.3);
 }
-
 
 /* Trend section*/
 
@@ -346,12 +356,15 @@ body h3, p {
 }
 .trend__wrapper{
     margin: 127px 0px 54px 0px;
+
     display: flex;
     justify-content: space-between;
 }
 .trend__card{
     margin: 0px 12px;
+
     position: relative;
+
     width: 312px;
     height: 442px;
 
@@ -398,11 +411,13 @@ body h3, p {
 }
 .trend__info-price{
     margin-top: 30px;
+
     display: flex;
     align-items: center;
 }
 .trend__info-price p {
     margin-left: 13px;
+
     font-family: 'Outfit';
     font-weight: 700;
     font-size: 18px;
@@ -429,10 +444,10 @@ body h3, p {
 }
 .treasures{
     height: 1100px;
- 
 }
 .treasure__content{
     padding-top: 161px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,6 +460,7 @@ body h3, p {
 }
 .treasure__subtitle{
     max-width: 723px;
+
     font-family: 'Outfit';
     font-weight: 500;
     font-size: 20px;
@@ -454,6 +470,7 @@ body h3, p {
 }
 .treasure__wrapper{
     margin: 73px 0px 81px;
+
     display: grid;
     grid-template-columns: repeat(252px, 5);
     grid-template-rows: repeat(415px, 2);
@@ -462,6 +479,7 @@ body h3, p {
 }
 .treasure__card{
     padding: 15px;
+
     width: 252px;
     height: 415px;
 
@@ -489,38 +507,37 @@ body h3, p {
     grid-column: 5/6;
     grid-row: 1/2;
 }
-
-
 .treasure__card-top{
     margin-bottom: 7px;
+
     display: flex;
     align-items: center;
 }
 .treasure__card-avatar{
     width: 30px;
     height: 30px;
+
     border-radius: 50%;
     background: rgb(161, 159, 159);
     background-image: url(./assets/img/user.png);
 }
 .treasure__card-count{
-    margin-left: 5px;
+    margin: 0px 85px 0px 5px;
+
     font-family: 'Outfit';
     font-weight: 600;
     font-size: 14px;
     color: #FFFFFF;
 }
 .treasure__card-like{
-    margin-left: 85px;
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
 
     background-image: url(./assets/img/heart.svg);
 }
 .treasure__card-liked{
-    margin-left: 85px;
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
 
     background-image: url(./assets/img/liked.svg);
 }
@@ -541,11 +558,11 @@ body h3, p {
 }
 .treasure__card-price,.treasure__price  {
     margin-top: 8px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .become{
     margin-top: 248px;
 }
@@ -564,13 +581,16 @@ body h3, p {
 }
 .become__wrapper{
     margin-top: 76px;
+
     display: flex;
     justify-content: space-between;
 }
 .become__card{
     width: 422px;
     height: 420px;
+
     margin: 0px 12px;
+
     border: 1px solid #4AED52;
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
     backdrop-filter: blur(12.5px);
@@ -587,6 +607,7 @@ body h3, p {
 }
 .become__card-title{
     margin: 25px 0px;
+
     font-family: 'Outfit';
     font-weight: 700;
     font-size: 20px;
@@ -605,19 +626,23 @@ body h3, p {
 }
 .popular__content{
     margin: 300px 0px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .popular__title{
+    margin-bottom: 80px;
+
     font-family: 'Outfit';
     font-weight: 700;
     font-size: 38px;
-    margin-bottom: 80px;
 }
 .popular__wrapper{
     width: 100%;
+
     position: relative;
+
     display: flex;
 }
 .popular__card{
@@ -636,16 +661,17 @@ body h3, p {
     border-radius: 10px;
 }
 .popular__card:first-child{
+    margin-top: 100px;
+
     position: absolute;
     left: 10%;
-    
-    margin-top: 100px;
 }
 .popular__card:nth-child(2){
-    position: absolute;
-    left:20% ;
-    z-index: 2;
     margin-top: 50px;
+
+    position: absolute;
+    left:20%;
+    z-index: 2;
 }
 .popular__card:nth-child(3){
     position: absolute;
@@ -653,15 +679,17 @@ body h3, p {
     z-index: 999;
 }
 .popular__card:nth-child(4){
+    margin-top: 50px;
+
     position: absolute;
     right: 20%;
     z-index: 2;
-    margin-top: 50px;
 }
 .popular__card:last-child{
+    margin-top: 100px;
+
     position: absolute;
     right: 10%;
-    margin-top: 100px;
 }
 .popular__card-avatar{
     position: absolute;
@@ -669,6 +697,7 @@ body h3, p {
 }
 .popular__card-title{
     margin-top: 51px;
+
     font-family: 'Outfit';
     font-weight: 700;
     font-size: 20px;
@@ -709,6 +738,7 @@ body h3, p {
 }
 .popular__card-info{
     margin-top: 41px;
+
     display: flex;
 }
 .popular__info-box{
@@ -740,6 +770,7 @@ body h3, p {
 }
 .collection__wrapper{
     margin: 80px 0px;
+
     display: grid;
     grid-template-columns: repeat(3, 428px);
     grid-template-rows: repeat(2, 426px);
@@ -749,9 +780,11 @@ body h3, p {
 .collection__card{
     width: 428.46px;
     height: 426.84px;
+
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
     backdrop-filter: blur(12.5px);
     border-radius: 6px;
+
     display: flex;
     flex-direction: column;
 }
@@ -790,14 +823,16 @@ body h3, p {
     opacity: 0.7;
     backdrop-filter: blur(5px);
     border-radius: 0px 0px 6px 6px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .collection__info-text{
+    margin-right: 97px;
+    
     display: flex;
     flex-direction: column;
-    margin-right: 97px;
 }
 .collection__card-title{
     font-family: 'Outfit';
@@ -815,6 +850,12 @@ body h3, p {
     height: 17px;
 
     background-image: url(./assets/img/heart.svg);
+}
+.collection__card-liked{
+    width: 17px;
+    height: 17px;
+
+    background-image: url(./assets/img/liked.svg);
 }
 .collection__btn{
     background: #E025CE;
